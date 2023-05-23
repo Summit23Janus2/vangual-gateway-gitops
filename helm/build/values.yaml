@@ -1,0 +1,15 @@
+app:
+  name: vangual-poi-gateway-app
+  namespace: vangual
+  cluster: .apps.summit23blues.6mbu.p1.openshiftapps.com
+
+git:
+  branch: main
+  repo: https://github.com/Summit23Janus2/vangual-gateway
+  org: Summit23Janus2
+  name: vangual-gateway
+
+image:
+  host: image-registry.openshift-image-registry.svc:5000
+  name: vangual/poi-gateway-app
+  tag: latest
